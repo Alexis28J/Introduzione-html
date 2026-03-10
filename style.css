@@ -1,0 +1,73 @@
+/* (Per eliminare i bordi della pagina html) */
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: burlywood;
+}
+
+a{
+    background-color: beige;
+}
+
+/* (Selezione di classe) */
+/* (Ho messo come commento per provare altra selezione con h1 più sotto) */
+/* .Jordy{
+    background-color: beige;
+} */
+
+/* (Selezione id) */
+#Alexis{
+    background-color: bisque;
+}
+
+/* (Selezione strong) */
+/* (Scrivendo p seleziona la prima parola "strong) */
+p strong {
+    background-color: brown;
+}
+
+h1, h2, h3 {
+    color: rgb(139, 44, 50);
+}
+
+
+h1{
+    /* (metto come commento per il momento) */
+    /* background-color: rgb(123, 255, 0); */
+    width: 50%;
+    /* (lunghezza minima) */
+    min-width: 400px;
+    height: 50px;
+    overflow: hidden;
+    /* (i valori si mettono in senso orario a partire dalla cima) */
+    margin: 100px 20px 200px 300px;
+    padding: 100px 20px 200px 3px;
+    /* (ci sono diversi tipi di bordi oltre al "solid") */
+    /* (ho messo come comento per il momento) */
+    /* border: solid;
+    border-color: darkgreen;
+    border-width: 20px; */
+    /* (per arrotondare i bordi) */
+    border-radius: 100px 200px 0px 10px;
+    /* (i commandi si possono mettere insieme, ) */
+    border: solid crimson 20px;
+    background-image: url(./assets/Gattino.jpg);
+    /* (in caso si ripeta la immagini perchè piccola) */
+    background-repeat: no-repeat;
+    /* ("contain" per mettere tutta l'immagine visibile anche se non riempie lo spazio e "cover" per riempire lo spazio anche se l'immagine viene allungata) */
+    background-size: cover;
+    /* (per centrare l'immagine, primo valore per le asse delle x, secondo valore per le asse delle y) */
+    background-position: center center; 
+}
+
+/* (il 1roboto-mono-40000 è al posto di unifiquifier e sta per il peso) */
+.roboto-mono-400 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

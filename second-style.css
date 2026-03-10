@@ -1,0 +1,74 @@
+.box{
+    border-style: solid;
+    /* (non tutti i tag hanno di default il display "block" - il contenuto non vuole avere un'altro contenuto a fianco) */
+    /* (mettendo il display in "inline" il contenuto perde dimensione, allora mettiamo sia inline che block) */
+    /* display: inline-block; */
+    display: block;
+    /* width: 300px; */
+    height: 100px;
+    /* (di solito non si usa mai ma a volte bisogna cambiare l'ordine delle cose) */
+    position: static;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.violet{
+    background-color: violet;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.absolute{
+    position: absolute;
+    width: 200px;
+    /* (con "top" abbiamo spostato lo spazio alla cima, con "right" si segue la stessa logica) */
+    top: 100px;
+    right: 100px;
+}
+
+/* (con "fixed" la posizione è fissa, ci segue anche se spostiamo la pagina, a differenza di "absolute" la cui posizione resta fissa ma non ci segue) */
+.fixed{
+    position: fixed;
+    width: 200px;
+    top: 100px;
+    left: 100px;
+}
+
+/* (con la classe "relative" la posizione diventa "galleggiante" rispetto alle posizioni scritte prima cioè si sovrappone) */
+.relative{ 
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+/* (per creare una scatola piccola) */
+.small-box{
+width: 100px;
+height: 100px;
+}
+
+/* (perchè questa classe funzioni, ci deve essere un'altro con la classe relative) */
+.absolute-relative{
+    position: absolute;
+    left: 20 px;
+    bottom: 20px;
+}
