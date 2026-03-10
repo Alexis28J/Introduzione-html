@@ -1,0 +1,67 @@
+
+HTML (HyperText Markup Language - Lingua di Marcatura Ipertestuale) è il linguaggio di markup standard utilizzato per creare pagine web.
+Markup language (linguaggio di markup) è un sistema di annotazione che consente di strutturare e formattare il contenuto di un documento.
+HTML è un linguaggio di markup che utilizza tag per definire la struttura e il contenuto di una pagina web.
+
+Altri linguaggi di markup includono XML (eXtensible Markup Language) e Markdown, che sono utilizzati per scopi diversi ma condividono l'idea di utilizzare tag per strutturare il contenuto.
+
+--------------------------------------------------------------
+
+I tag in html sono dei comandi che permettono di strutturare e formattare il contenuto di una pagina web. 
+I tag HTML sono fondamentali per la creazione di pagine web e sono utilizzati per definire la struttura e il contenuto di un sito.
+
+Ogni tag ha una funzione specifica e viene utilizzato per indicare al browser come visualizzare il testo, le immagini, i link e altri elementi della pagina. 
+Ad esempio, il tag `<h1>` viene utilizzato per creare un titolo principale, mentre il tag `<p>` viene usato per creare un paragrafo di testo. 
+
+I tag possono anche essere annidati, consentendo di creare strutture più complesse all'interno della pagina.
+
+I tag HTML sono scritti tra parentesi angolari e possono essere chiusi con una barra (/) per indicare la fine del tag.
+
+I tag sono case-insensitive, il che significa che possono essere scritti in maiuscolo o minuscolo senza influire sulla loro funzionalità. 
+Tuttavia, è comune utilizzare i tag in minuscolo per una migliore leggibilità.
+
+Scrivendo ! e premendo tab (o invio, a seconda dell'editor), si può inserire automaticamente la dichiarazione !DOCTYPE html in un documento HTML.
+
+----------------------------------------------------
+
+In una pagina html, !DOCTYPE è una dichiarazione che indica al browser quale versione di HTML viene utilizzata.
+La dichiarazione !DOCTYPE è importante perché aiuta il browser a interpretare correttamente il codice HTML e a visualizzare la pagina web in modo coerente su diversi dispositivi e browser.
+Ad esempio, `<!DOCTYPE html>` indica che la pagina utilizza HTML5, che è la versione più recente di HTML.
+
+- `<html>`: Il tag radice che racchiude tutto il contenuto di una pagina web.
+- `<head>`: Contiene informazioni sulla pagina, come il titolo, i meta tag e i link a fogli di stile e script.
+- `<body>`: Contiene il contenuto visibile della pagina, come testo, immagini e link.
+- `<header>`: Utilizzato per definire l'intestazione di una sezione o di un documento.
+- `<nav>`: Utilizzato per definire una sezione di navigazione, come un menu di link.
+- `<main>`: Utilizzato per definire il contenuto principale di una pagina web.
+- `<footer>`: Utilizzato per definire il piè di pagina di una sezione o di un documento.
+
+- `<h1>`: Utilizzato per creare un titolo principale.   
+- `<h2>`: Utilizzato per creare un sottotitolo o un titolo di secondo livello, e così via fino a `<h6>`.
+- `<a>`: Utilizzato per creare un link a un'altra pagina o a un sito esterno. L'attributo `href` specifica l'URL del link.
+- `<p>`: Utilizzato per creare un paragrafo di testo.
+- `<span>`: Utilizzato per applicare stili o classi a una porzione specifica di testo all'interno di un elemento.
+   (Si differenza da `<p>`, span non crea un nuovo blocco di testo, ma consente di applicare stili a una parte del testo all'interno di un paragrafo o di un altro elemento.)
+- `<strong>`: Utilizzato per evidenziare un testo, rendendolo più importante o enfatizzato.
+- `<br>`: Utilizzato per inserire un'interruzione di linea all'interno del testo.
+- `<em>`: Utilizzato per enfatizzare un testo, rendendolo più importante o enfatizzato, ma con un significato semantico diverso da `<strong>`.
+   Cioè, `<strong>` indica un'importanza forte, mentre `<em>` indica un'enfasi più leggera.
+- `<b>`: Utilizzato per rendere il testo in grassetto, spesso usato per evidenziare parole chiave o titoli, ma senza un significato semantico specifico.
+- `<i>`: Utilizzato per rendere il testo in corsivo, spesso usato per indicare titoli di opere, termini tecnici o parole straniere.
+
+- `<img>`: Utilizzato per inserire un'immagine nella pagina web. L'attributo `src` specifica l'URL dell'immagine, mentre l'attributo `alt` fornisce una descrizione testuale dell'immagine per l'accessibilità.
+- `<ul>`: Utilizzato per creare un elenco non ordinato (con punti).
+- `<ol>`: Utilizzato per creare un elenco ordinato (con numeri).
+- `<li>`: Utilizzato per definire un elemento di un elenco, sia ordinato che non ordinato.
+
+- `<table>`: Utilizzato per creare una tabella. All'interno di una tabella, si utilizzano i tag `<tr>` per definire le righe, `<th>` per definire le intestazioni delle colonne e `<td>` per definire le celle dei dati.
+  Le tabelle sono spesso utilizzate per visualizzare dati tabulari, ma possono anche essere utilizzate per creare layout complessi, sebbene questa pratica sia sconsigliata a favore dell'uso di CSS per il layout.
+
+--------------------------------------------------------------
+
+Scegliere la lingua usando l'attributo lang nel tag html per indicare la lingua del contenuto della pagina web.
+Ad esempio, `<!DOCTYPE html><html lang="it">` indica che la pagina è scritta in italiano. 
+Questo è importante per l'accessibilità e per i motori di ricerca, poiché aiuta a identificare la lingua del contenuto e a fornire una migliore esperienza utente.
+
+
+
