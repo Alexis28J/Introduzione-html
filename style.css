@@ -1,6 +1,7 @@
 /* (Per eliminare i bordi della pagina html) */
 
-body, html{
+body,
+html {
     margin: 0px;
     padding: 0px;
 }
@@ -9,7 +10,7 @@ body {
     background-color: burlywood;
 }
 
-a{
+a {
     background-color: beige;
 }
 
@@ -20,7 +21,7 @@ a{
 } */
 
 /* (Selezione id) */
-#Alexis{
+#Alexis {
     background-color: bisque;
 }
 
@@ -30,12 +31,14 @@ p strong {
     background-color: brown;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: rgb(139, 44, 50);
 }
 
 
-h1{
+h1 {
     /* (metto come commento per il momento) */
     /* background-color: rgb(123, 255, 0); */
     width: 50%;
@@ -61,13 +64,13 @@ h1{
     /* ("contain" per mettere tutta l'immagine visibile anche se non riempie lo spazio e "cover" per riempire lo spazio anche se l'immagine viene allungata) */
     background-size: cover;
     /* (per centrare l'immagine, primo valore per le asse delle x, secondo valore per le asse delle y) */
-    background-position: center center; 
+    background-position: center center;
 }
 
 /* (il 1roboto-mono-40000 è al posto di unifiquifier e sta per il peso) */
 .roboto-mono-400 {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }

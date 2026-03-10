@@ -1,0 +1,125 @@
+CSS (Cascading Style Sheets - Fogli di Stile a Cascata) è un linguaggio utilizzato per descrivere la presentazione di un documento scritto in HTML o XML.   
+
+IL CSS è un linguaggio utilizzato per definire lo stile di un sito web, come colori, font, layout e altri aspetti visivi.
+
+Il CSS si applica agli elementi HTML per renderli più belli e funzionali. 
+
+Ad esempio, possiamo usare il CSS per cambiare il colore di un paragrafo, la dimensione del testo o la disposizione degli elementi sulla pagina.
+Il CSS si basato su regole che consistono in un selettore (che indica a quale elemento HTML si applica la regola) e una dichiarazione (che specifica le proprietà e i valori da applicare).
+
+------------------------------------------------------------------------
+
+I SELETTORI: 
+I selettori possono essere di diversi tipi, come selettori di tipo (che selezionano elementi HTML specifici), selettori di classe (che selezionano elementi con una classe specifica) e selettori di ID (che selezionano un elemento con un ID specifico).
+
+Ad esempio, se vogliamo cambiare il colore di tutti i paragrafi in rosso, possiamo usare il seguente codice CSS:
+```css  
+p {
+  color: red;
+}
+
+Se invece vogliamo cambiare il colore di un elemento con una classe specifica, possiamo usare il seguente codice CSS:
+```css
+.my-class {
+  color: blue;
+}
+
+E se vogliamo cambiare il colore di un elemento con un ID specifico, possiamo usare il seguente codice CSS:
+```css
+#my-id {
+  color: green;
+}
+
+Un altro tipo di selettore è il selettore universale, che seleziona tutti gli elementi HTML.
+Ad esempio, se vogliamo cambiare il colore di tutti gli elementi HTML in rosso, possiamo usare il seguente codice CSS:
+```css
+* {
+  color: red;
+}
+
+
+Un altro modo per selezionare gli elementi è usare i selettori discendenti, che selezionano gli elementi che sono discendenti di un altro elemento.
+Ad esempio, se vogliamo cambiare il colore di tutti gli elementi <strong> che si trovano all'interno di un elemento <p>, possiamo usare il seguente codice CSS:
+```css
+p strong { color: red; } 
+Scrivendo questo, stiamo dicendo al browser di rendere rosso il testo all'interno di un elemento <strong> che si trova all'interno di un elemento <p>.
+
+-------------------------------------------------------------------------
+
+LE PROPRIETÀ:
+Le proprietà CSS sono le caratteristiche che possiamo modificare per gli elementi HTML, 
+come il colore, la dimensione del testo, il margine, il padding, la larghezza, l'altezza e molti altri aspetti visivi.
+
+Ad esempio, se vogliamo cambiare la dimensione del testo di un paragrafo, possiamo usare la proprietà "font-size":
+```css  
+p {
+  font-size: 16px;
+}
+
+Le proprietà CSS possono essere combinate per creare stili più complessi. 
+Ad esempio, se vogliamo cambiare il colore, la dimensione del testo e il margine di un paragrafo, possiamo usare il seguente codice CSS:
+```css
+p {
+  color: red;
+  font-size: 16px;
+  margin: 10px;
+}
+
+Le proprietà CSS possono essere ereditate dagli elementi genitori agli elementi figli. 
+Ad esempio, se impostiamo il colore del testo di un elemento genitore, tutti gli elementi figli erediteranno quel colore a meno che non venga specificato diversamente.
+Ad esempio, se impostiamo il colore del testo di un div a rosso, tutti i paragrafi all'interno di quel div erediteranno il colore rosso:
+```css
+div {
+  color: red;
+}
+
+Le proprietà CSS possono essere sovrascritte da regole più specifiche. 
+Ad esempio, se abbiamo una regola che imposta il colore del testo di un paragrafo a rosso, ma poi abbiamo un'altra regola che imposta il colore del testo di un paragrafo con una classe specifica a blu, la regola più specifica (quella con la classe) sovrascriverà la regola più generale (quella senza classe):
+
+Inoltre, l'ordine delle regole CSS è importante. 
+Se due regole hanno la stessa specificità, la regola che appare per ultima nel foglio di stile sovrascriverà l'altra regola.
+Ad esempio, se abbiamo due regole che impostano il colore del testo di un paragrafo a rosso, ma una regola appare prima dell'altra nel foglio di stile, la regola che appare per ultima sovrascriverà l'altra regola:
+```css
+p {
+  color: red;
+}
+p {
+  color: blue;
+}
+In questo caso, il colore del testo del paragrafo sarà blu, perché la seconda regola sovrascrive la prima regola.
+
+------------------------------------------------------------------------------------
+
+ALCUNE PROPRIETÀ CHE ABBIAMO VISTO IN CLASSE:
+
+margin: è lo spazio esterno di un elemento, che separa l'elemento dagli altri elementi circostanti.
+padding: è lo spazio interno di un elemento, che separa il contenuto dell'elemento dai suoi bordi.
+
+border: è la linea che circonda un elemento, che può essere personalizzata con diversi stili, colori e spessori.
+Un border: 1px solid black; crea un bordo di 1 pixel di spessore, con uno stile solido e un colore nero.
+
+border-radius: è la proprietà che definisce gli angoli arrotondati di un elemento.
+Un border-radius: 10px; crea angoli arrotondati con un raggio di 10 pixel.
+
+color: è la proprietà che definisce il colore del testo di un elemento.
+
+background-color: è la proprietà che definisce il colore di sfondo di un elemento.
+font-size: è la proprietà che definisce la dimensione del testo di un elemento.
+
+background-image: è la proprietà che definisce un'immagine di sfondo per un elemento.
+Un background-image: url('image.jpg'); imposta l'immagine 'image.jpg' come sfondo dell'elemento.
+
+background-size: è la proprietà che definisce la dimensione dell'immagine di sfondo di un elemento.
+Un background-size: cover; ridimensiona l'immagine di sfondo in modo che copra completamente l'elemento, mantenendo le proporzioni dell'immagine.
+
+background-position: è la proprietà che definisce la posizione dell'immagine di sfondo di un elemento.
+Un background-position: center; posiziona l'immagine di sfondo al centro dell'elemento.
+
+background-repeat: è la proprietà che definisce se l'immagine di sfondo di un elemento deve essere ripetuta o meno.
+Un background-repeat: no-repeat; impedisce che l'immagine di sfondo venga ripetuta, mostrando solo una singola istanza dell'immagine.
+
+overflow: è la proprietà che controlla come il contenuto di un elemento viene gestito quando supera le dimensioni dell'elemento stesso.
+Un overflow: hidden; nasconde il contenuto che supera le dimensioni dell'elemento, mentre un overflow: scroll; aggiunge una barra di scorrimento per permettere all'utente di vedere tutto il contenuto.
+
+font-family: è la proprietà che definisce il tipo di carattere utilizzato per il testo di un elemento.
+Un font-family: Arial, sans-serif; imposta il tipo di carattere Arial come primo scelta, e se Arial non è disponibile, utilizza un carattere sans-serif generico.
