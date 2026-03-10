@@ -92,6 +92,8 @@ In questo caso, il colore del testo del paragrafo sarà blu, perché la seconda 
 
 ALCUNE PROPRIETÀ CHE ABBIAMO VISTO IN CLASSE:
 
+* style.css:
+
 margin: è lo spazio esterno di un elemento, che separa l'elemento dagli altri elementi circostanti.
 padding: è lo spazio interno di un elemento, che separa il contenuto dell'elemento dai suoi bordi.
 
@@ -123,3 +125,25 @@ Un overflow: hidden; nasconde il contenuto che supera le dimensioni dell'element
 
 font-family: è la proprietà che definisce il tipo di carattere utilizzato per il testo di un elemento.
 Un font-family: Arial, sans-serif; imposta il tipo di carattere Arial come primo scelta, e se Arial non è disponibile, utilizza un carattere sans-serif generico.
+
+
+* second-style.css: 
+
+display: è la proprietà che definisce come un elemento viene visualizzato sulla pagina.
+Un display: block; fa sì che l'elemento occupi tutta la larghezza disponibile e inizi su una nuova riga, mentre un display: inline; fa sì che l'elemento occupi solo lo spazio necessario e non inizi su una nuova riga.
+Un display: flex; fa sì che l'elemento diventi un contenitore flessibile, permettendo di allineare e distribuire gli elementi figli in modo più efficiente.
+
+position: è la proprietà che definisce il tipo di posizionamento di un elemento sulla pagina.
+
+Un position: static; è il valore predefinito, che posiziona l'elemento in base al flusso normale del documento. Cioè, l'elemento viene posizionato in base alla sua posizione nel codice HTML, senza alcuna modifica.
+
+Un position: relative; posiziona l'elemento in relazione alla sua posizione normale, permettendo di spostarlo con le proprietà top, right, bottom e left. 
+(con la classe "relative" la posizione diventa "galleggiante" rispetto alle posizioni scritte prima cioè si sovrappone)
+
+Un position: absolute; posiziona l'elemento in relazione al suo primo antenato posizionato, o al viewport se non ci sono antenati posizionati. 
+Perché la classe "absolute" funzioni, è necessario che l'elemento abbia un antenato con una posizione diversa da "static" (ad esempio, "relative"). 
+Se non c'è un antenato posizionato, l'elemento con position: absolute sarà posizionato in relazione al viewport, il che significa che si sposterà quando la pagina viene scorsa.
+
+Un position: fixed; posiziona l'elemento in relazione al viewport, rimanendo fisso durante lo scorrimento della pagina.
+(con "fixed" la posizione è fissa, ci segue anche se spostiamo la pagina, a differenza di "absolute" la cui posizione resta fissa ma non ci segue)
+
